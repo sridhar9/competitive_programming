@@ -50,7 +50,30 @@ class MinHeapLib:
 
 
 def main():
-    # using library
+    # using direct library
+    # create empty heap
+    heap = []
+    heapify(heap)
+
+    # Adding items to the heap using heappush function
+    heappush(heap, 10)
+    heappush(heap, 30)
+    heappush(heap, 20)
+    heappush(heap, 400)
+
+    # printing the value of minimum element
+    print("Head value of heap : "+str(heap[0]))
+
+    # printing the elements of the heap
+    print("The heap elements : ")
+    for i in heap:
+        print(i, end = ' ')
+    print("\n")
+
+    element = heappop(heap)
+    
+    
+    # using library and adding something to library.
     heapObj = MinHeapLib()
     heapObj.insertKey(3)
     heapObj.insertKey(2)
@@ -66,7 +89,7 @@ def main():
     print (heapObj.getMin())
 
 
-    # using custom implementation
+    # using custom implementation (from scratch)
 
 
 
