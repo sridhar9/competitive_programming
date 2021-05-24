@@ -1,3 +1,6 @@
+# randomized quickselect (find kth min element in array) takes on avg O(n) time. [worst case O(n^2) but it rarely occurs]
+
+
 import random
 
 def main ():
